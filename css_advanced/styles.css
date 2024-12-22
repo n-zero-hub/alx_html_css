@@ -1,0 +1,122 @@
+
+header, .banner {
+    background-image: url('Object.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 29.46px;
+    left: 171.59px;
+    top: 35.02px;
+}
+nav ul {
+    width: 234px;
+    height: 15px;
+    left: 1041px;
+    top: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    
+}
+li {
+    text-transform: uppercase;
+    height: 15px; 
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+li>a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    color: blue;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.schooled {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 168px;
+}
+h1 {
+height: 151px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 120px;
+line-height: 151px;
+text-align: center;
+margin-top: 220px;
+margin-bottom: 0px;
+}
+.schooled>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.schooled button {
+    width: 162px;
+    height: 44px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+    color: #FFFFFF;
+    background: #C271FF;
+    border-radius: 22px;
+    border: none;
+}
+button:hover {
+    background: rgba(0, 0, 145, 0.25);
+}
+.pros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    width: 1009px;
+    margin-bottom: 100px;
+}
+.pros>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1009px;
+    height: 237;
+    margin-top: 90px;
+}
+.pros>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 237px;
+}
+.pros>div>div>p {
+    margin-top: 0px;
+    text-align: center;
+}
+.pros>div>div>img {
+    border-radius: 50%;
+}
+
