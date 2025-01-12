@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero_1 {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1000px;
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.logo {
+    height: 32px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 1rem 2rem;
+}
+.header_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    >li>a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    >li>a:hover {
+        color: #FF6565;
+    }
+    >li>a:active {
+        color: #FF6565;
+    }
+}
+.menu {
+    display: none;
+}
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.hero_1 {
+    text-align: center;
+    color: white;
+}
+.hero_1_content {
+    margin-top: 20rem;
+    margin-bottom: 4rem;
+    >h2 {
+        font-size: 32px;
+        font-weight: bold;
+        padding: 0.3rem;
+    }
+    >h3 {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0.5rem auto;
+    }
+    >button {
+        margin-top: 40px;
+        margin-bottom: 65px;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 22px;
+        background-color: #FF6565;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    >p {
+        max-width: 637px;
+        vertical-align: top;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+    >button:hover {
+        background-color: rgb(255, 101, 101, 0.9);
+    }
+}
+@media (max-width: 480px) {
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding-left: 0.7rem;
+        padding-right: 30%;
+    }
+    .header_list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        >li>a {
+            font-size: 14px;
+        }
+    }
+    .menu:checked ~ .header_list {
+        display: flex;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
