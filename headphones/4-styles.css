@@ -280,15 +280,16 @@ header {
  }
 .footer_nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     text-decoration: none;
+margin-top: 3rem;
+
     >ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        gap: 1rem;
         width: 130px;
     
     >ul::marker {
@@ -309,6 +310,7 @@ li::marker {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     color: rgb(255, 255, 255, 0.2);
 }
 
